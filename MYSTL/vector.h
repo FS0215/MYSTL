@@ -40,7 +40,11 @@ namespace mystl
 
 // 模板类: vector 
 // 模板参数 T 代表类型
+template <class T>
+class vector
+{
 
+};
 }
 
 
