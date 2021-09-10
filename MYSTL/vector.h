@@ -43,6 +43,10 @@ namespace mystl
 template <class T>
 class vector
 {
+	static_assert(!std::is_same<bool, T>::value, "vector<bool> is abandoned in mystl");
+public:
+	//vector 的嵌套型别定义
+	typedef mystl::allocator<T>										allocator_type;
 
 };
 }
